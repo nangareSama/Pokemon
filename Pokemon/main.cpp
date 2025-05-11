@@ -4,10 +4,20 @@ using namespace std;
 
 
 int main() {
-    string player_name;
-    cout << "Enter your name";
-    cin >> player_name;
-    cout << "Great Start " + player_name + ",looks like you have understood the main() function properly now!";
+   cout << "Please enter the Pokemon you Choose \n there are 3 choices :\n 1.Bulbasaur \n 2.Charmander \n 3.Squirtle \n";
+  int playerinput;
+   cin >> playerinput;
+
+
+   if(playerinput == 1){
+    cout << "You chose Bulbasaur! A wise choice.\n";
+   }else if(playerinput == 2){
+    cout << "You chose Charmander! A fiery choice.\n";
+   }else if(playerinput == 3){
+    cout << "You chose Squirtle! A cool choice.\n";
+   }else {
+    cout << "Invalid choice.\n";
+   }
 
     return 0;
 }
