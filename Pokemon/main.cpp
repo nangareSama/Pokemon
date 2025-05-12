@@ -9,15 +9,32 @@ int main() {
    cin >> playerinput;
 
 
-   if(playerinput == 1){
-    cout << "You chose Bulbasaur! A wise choice.\n";
-   }else if(playerinput == 2){
-    cout << "You chose Charmander! A fiery choice.\n";
-   }else if(playerinput == 3){
-    cout << "You chose Squirtle! A cool choice.\n";
-   }else {
-    cout << "Invalid choice.\n";
-   }
+//    if(playerinput == 1){
+//     cout << "You chose Bulbasaur! A wise choice.\n";
+//    }else if(playerinput == 2){
+//     cout << "You chose Charmander! A fiery choice.\n";
+//    }else if(playerinput == 3){
+//     cout << "You chose Squirtle! A cool choice.\n";
+//    }else {
+//     cout << "Pikachu !\n";
+//    }
+
+    switch(playerinput){
+        case 1 : 
+            cout << "You chose Bulbasaur! A wise choice.\n";
+        break;
+
+        case 2 : 
+            cout << "You chose Charmander! A fiery choice.\n";
+        break;
+
+        case 3 : 
+            cout << "You chose Squirtle! A cool choice.\n";
+        break;
+
+        default : 
+        cout << "Invalid choice.\n";
+    }
 
     return 0;
 }
