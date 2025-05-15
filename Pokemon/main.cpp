@@ -29,9 +29,9 @@ public:
 
     // Default constructor
     Pokemon() {
-        name = "Unknown";
-        type = PokemonType::NORMAL;
-        health = 50;
+        name = "Pikachu";
+        type = PokemonType::ELECTRIC;
+        health = 10;
         cout << "A new Pokemon has been created with the default constructor!\n";
     }
 
@@ -55,6 +55,8 @@ public:
     ~Pokemon() {
         cout << name << " has been released.\n";
     }
+
+    
 
     // Method to simulate attacking (just for demonstration)
     void attack() {
@@ -81,6 +83,12 @@ public:
         name = p_name;
         chosenPokemon = p_chosenPokemon;
         cout << "Player " << name << " has been created!\n";
+    }
+
+    Player(const Player& other){
+        name = other.name;
+        chosenPokemon = other.chosenPokemon;
+        cout << "Player " << name << " Has been coppied";
     }
 
     // Method to choose a Pokemon
