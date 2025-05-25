@@ -1,6 +1,6 @@
 #include <iostream>
-#include <limits> // Include this header to use numeric_limits
 #include <string>
+#include <header.hpp>
 using namespace std;
 
 // Function to clear the console
@@ -15,7 +15,6 @@ void clearConsole() {
 
 // Function to wait for user to press Enter
 void waitForEnter() {
-    cout << "please press enter to continue....!";
   cin.get(); // Wait for Enter key
 }
 
@@ -219,50 +218,6 @@ public:
                  "forget to set up the actual game loop... Ahem, onwards!\n";
     waitForEnter();
   }
-
-  explainMainQuest(Player& player){
-
-    cout << "Professor Oak: \"Ah, " << player.player_name << ", let me tell you about your grand adventure that's about to unfold!\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"Becoming a Pokémon Master is no easy task. It demands courage, strategy, and sometimes a little bit of luck.\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"Your main mission is to collect all the Pokémon Badges and defeat the Pokémon League. Only then can you challenge the Elite Four and aim for the title of Champion.\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << player.player_name << ": \"Wait, isn’t that just like every other Pokémon game?\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"No breaking the fourth wall, " << player.player_name << "! This is serious business.\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"To achieve this, you must capture new Pokémon, battle wild creatures, challenge gym leaders, and keep your Pokémon healthy at the PokeCenter.\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"Remember, you can only carry a limited number of Pokémon. Choose wisely who you want on your team!\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << player.player_name << ": \"Piece of cake, right?\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"Ha! That’s what everyone thinks. But the path to becoming a Champion is filled with obstacles. Lose a battle, and it’s back to the start!\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"So, what do you say? Are you ready to embark on this epic journey to become the next Pokémon Champion?\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << player.player_name << ": \"Ready as I’ll ever be, Professor!\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"That’s the spirit! Now, your journey begins. Remember, it’s not just about battling—it’s about forming bonds with your Pokémon. Go, Trainer, the world of Pokémon awaits you!\"" << endl;
-    waitForEnter();
-    clearConsole();
-    cout << "Professor Oak: \"Oh, and about the actual game loop… let’s just pretend I didn’t forget to set it up. Onwards!\"" << endl;
-    waitForEnter();
-    clearConsole();
-  }
-
 };
 
 // Function to handle the main game loop
@@ -351,3 +306,4 @@ int main() {
 
   return 0;
 }
+ 
